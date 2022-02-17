@@ -1,0 +1,76 @@
+
+.closebtn{
+    margin-left: 200px;
+    }
+
+
+    #main-sidebar
+    {
+      display: none;
+                 
+    }
+ 
+  @media only screen and (min-width:1025px){
+  
+    #main-sidebar{
+    display :block;
+    width:255px;
+    }
+
+    //span{display:none;}
+     }
+
+
+
+@media only screen 
+and (min-device-width : 744px) 
+and (max-device-width : 1024px)  
+ {
+    #main-sidebar
+    {
+        display :block;
+        width:50px;
+      }
+    
+    //span{display:none;}
+    
+
+ }
+
+ @media only screen and (max-width: 375px) {
+  #main-sidebar 
+  {
+    display: none;
+    
+  }
+
+ }
+
+
+
+ //side bar hover 
+
+
+ .opened
+ {
+  width:255px;
+  }
+
+  .closed
+  {
+
+   width:50px;
+  }
+  
+  
+
+  .displaytext
+  {
+    display:inline;
+  }
+
+  
+.sidebar-menu > li:hover > a {
+  color: #fff;
+  font-weight: 600;
+  background: #39444e; }

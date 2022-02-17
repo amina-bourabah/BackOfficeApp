@@ -1,0 +1,75 @@
+<header class="main-header-top hidden-print">
+    <nav class="navbar navbar-static-top">
+ 
+       <!-- Sidebar toggle button-->
+       <a (click)="toggleSidebar();" class="sidebar-toggle" id="toggleclick"></a>
+ 
+ 
+       <!-- Navbar Righ Menu-->
+       <div class="navbar-custom-menu f-right">
+ 
+          <ul class="top-nav">
+ 
+
+              <!-- Notification Menu-->
+
+            <li class="dropdown notification-menu">
+               <a href="#!" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                  <i class="icon-bell"></i>
+               </a>
+
+               <ul [hidden]="linkshown" class="top-nav lft-nav">
+
+                  <li  (click)="active_consommable()">
+                     <a [routerLink] = "'consommable'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
+                        <i class="ti-files"> </i><span> Produits par service</span>
+                     </a>
+                  </li> 
+
+                  </ul>
+
+                  <ul [hidden]="linkshown" class="top-nav lft-nav">
+                     <li (click)="active_trousseau()">
+                        <a [routerLink] = "'trousseau'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
+                           <i class="ti-files"> </i><span> Trousseau</span>
+                        </a>
+                     </li> 
+   
+                     </ul>
+
+               <ul class="dropdown-menu settings-menu">
+                  <li data-toggle="modal" data-target="#modalprestationintance"><i class="icofont icofont-clock-time"></i> Prestation En instances </li>
+                  <li data-toggle="modal" data-target="#modalforfait"><i class="icon-settings"></i> Forfaits</li>
+
+               </ul>
+            
+
+            </li>
+             <!-- User Menu-->
+             <li class="dropdown">
+                <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+                   class="dropdown-toggle drop icon-circle drop-image">
+                   <span><img class="img-circle " src="assets/Style/assets/images/admin.jpg" style="width:40px;"
+                         alt="User Image"></span>
+                   <span>  Back <b>Office</b> <i class=" icofont icofont-simple-down"></i></span>
+ 
+                </a>
+                <ul class="dropdown-menu settings-menu">
+                   <li><a href="#"><i class="icon-settings"></i> Paramètres </a></li>
+                   <li><a href="#"><i class="icon-user"></i> Profile</a></li>
+                   <li class="p-0">
+                      <div class="dropdown-divider m-0"></div>
+                   </li>
+                   <li><a href=""><i class="icon-logout"></i> Se déconnecter </a></li>
+ 
+                </ul>
+             </li>
+
+
+ 
+ 
+          </ul>
+ 
+       </div>
+    </nav>
+ </header>

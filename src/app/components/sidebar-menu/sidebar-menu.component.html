@@ -1,0 +1,48 @@
+<aside id="main-sidebar" class="main-sidebar ">
+    <section class="sidebar" id="sidebar-scroll" >
+
+        <!-- Sidebar Menu-->
+
+        <ul class="sidebar-menu">
+
+            <li class="nav-level"></li>
+            
+            <li class="nav-level"></li>
+
+         
+            <li  id="prestation" (click)="active_prestation()" class=" treeview"><a class="waves-effect waves-dark" [routerLink] = "'transfert'">
+                <i class="icon-briefcase"></i><span id="text-state"> Transfert simple </span></a>
+
+            </li>
+
+         
+
+            <li id="facture"  (click)="active_facture()" class="active treeview"><a class="waves-effect waves-dark" [routerLink] = "'facture'"><i class="icon-book-open"></i><span id="text-state">
+                        consultation transferts</span></a>
+
+            </li>
+
+            <li id="performances" (click)="active_performance()"  class="treeview"><a class="waves-effect waves-dark" [routerLink] = "'performances'"><i class="icon-chart"></i><span id="text-state">
+                        Performances</span></a>
+
+            </li>
+
+
+
+
+            <li id="historique" (click)="active_historique()"  [routerLink] = "'historique'" class="treeview"><a class="waves-effect waves-dark"><i class="icon-docs"></i><span id="text-state">
+                        Notification</span></a>
+
+            </li>
+
+
+
+           
+
+          
+
+
+
+        </ul>
+    </section>
+</aside>

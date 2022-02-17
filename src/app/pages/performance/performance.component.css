@@ -1,0 +1,129 @@
+.content-wrapper  
+{    
+    margin-top: 20px;
+    margin-left: 255px;
+    background-color: #E5E5E5;
+
+}
+
+ li.active > a 
+ {
+    background: #39444e;
+ }
+  
+
+
+
+
+ #formdisplay
+{
+display: none;
+}
+
+
+.formulairedropdown
+{
+    margin-bottom: 20px;
+
+}
+
+#formdisplay{
+    margin-bottom: 20px;
+}
+
+   
+  
+    
+
+#contenu
+{
+
+    margin-left:  200px;
+    margin-right: 200px;
+
+}
+
+.card
+{
+    //margin-left:-200px;
+}
+
+.table
+{
+    margin-left:-150px;   
+}
+
+.centerlogo
+{
+margin-left: -120px;
+}
+
+.float-right{
+margin-left:-160px;
+}
+
+.twoelements
+{
+    display:flex;
+}
+
+.rightposition
+
+{
+    margin-left:260px;
+}
+
+
+
+@media only screen and (max-width: 375px)
+{
+
+.content-wrapper
+{
+    margin-left:0px;
+}
+
+.margin
+{
+   margin-bottom: 10px;
+}
+ 
+
+.content-wrapper
+{
+   overflow:hidden;
+}
+
+}
+
+.content-wrapper
+{
+    height:100vh;
+
+}
+
+.container-fluid
+{
+    height:100vh;
+}
+
+.row 
+{
+    height: 100vh;
+}
+
+
+.divheight
+{
+   height:100vh;
+}
+
+#grid
+{
+
+background-color: white;
+height: calc(100% - 130px);
+
+}
+ 
+

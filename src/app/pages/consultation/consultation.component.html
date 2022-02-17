@@ -1,0 +1,56 @@
+<div class="content-wrapper" id="content-wrapper">
+
+    <div class="container-fluid">
+    
+    <div class="row">
+         
+      
+    
+   
+    
+    <div class="divheight col-lg-12 col-md-12 col-sm-12">
+      
+    
+        <div class="col-lg-12 col-md-5 col-sm-12">
+  
+
+
+            <igx-grid #grid id="grid" rowHeight="35px" displayDensity="compact" [data]="listetransfers"  [allowFiltering]="true"  [autoGenerate]="false" height="500px">
+        
+              <igx-grid-toolbar>
+                <igx-grid-toolbar-actions>
+                    <igx-grid-toolbar-exporter [exportExcel]="true" [exportCSV]="false">
+                    </igx-grid-toolbar-exporter>
+                </igx-grid-toolbar-actions>
+              </igx-grid-toolbar>
+          
+                <igx-column  field="ref_transfert"    header="Ref Transfert" [groupable]="true"></igx-column>
+                <igx-column  field="dateTransfert"    header="Date de transfert " [groupable]="true"></igx-column>
+                <igx-column  field="typeTransfert"    header="Type de Transfert" [groupable]="true"></igx-column>
+                <igx-column  field="idDonneur"        header="Donneur" [groupable]="true"></igx-column>
+                <igx-column  field="idBeneficiaire"   header="Benificaire" [groupable]="true"></igx-column>
+
+        
+    
+        
+        
+              </igx-grid>
+        
+        
+        </div>
+      
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+  
+    
+    </div>
+    
+    </div>
+    
+    
